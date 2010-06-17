@@ -1,0 +1,45 @@
+NAME
+    Dist::Zilla::PluginBundle::BINGOS - BeLike::BINGOS when you build your
+    dists
+
+VERSION
+    version 0.02
+
+SYNOPSIS
+       # in dist.ini
+       [@BINGOS]
+
+DESCRIPTION
+    This is a Dist::Zilla PluginBundle. It is roughly equivalent to the
+    following dist.ini:
+
+      [@Basic]
+
+      [MetaJSON]
+      [PodSyntaxTests]
+      [PodCoverageTests]
+
+      [PodWeaver]
+      [PkgVersion]
+      [GithubMeta]
+
+      [ChangelogFromGit]
+      file_name = Changes
+      tag_regexp = ^\d
+
+      [ReadmeFromPod]
+      [CompileTests]
+
+  METHODS
+    "configure"
+        See Dist::Zilla::PluginBundle::Easy.
+
+AUTHOR
+    Chris Williams <chris@bingosnet.co.uk>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Chris Williams.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
