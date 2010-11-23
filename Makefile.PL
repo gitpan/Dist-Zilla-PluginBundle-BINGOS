@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
- BEGIN { require 5.008005; } 
+BEGIN { require 5.008005; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::ReadmeFromPod' => '0.12',
     'Moose' => '1.08'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,3 +1,13 @@
-===================================
-End of changes in the last 365 days
-===================================
+==============================
+2010-11-23 00:14:58 +0000 0.04
+==============================
+
+  commit 4e1e013e9cc91c555365f05db5158ecab0380f61
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Nov 23 00:14:58 2010 +0000
+  
+    Bump max_age for ChangesFromGit to 1825 ( 5 years ) 
+
+====================================
+End of changes in the last 1825 days
+====================================
