@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110440",
    "license" : [
       "perl_5"
    ],
@@ -40,6 +40,6 @@
          "web" : "http://github.com/bingos/dist-zilla-pluginbundle-bingos/tree"
       }
    },
-   "version" : "0.04"
+   "version" : "0.06"
 }
 

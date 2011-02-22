@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::ReadmeFromPod' => '0.12',
     'Moose' => '1.08'
   },
-  'VERSION' => '0.04',
+  'VERSION' => '0.06',
   'test' => {
     'TESTS' => 't/*.t'
   }

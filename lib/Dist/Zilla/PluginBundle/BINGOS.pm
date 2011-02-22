@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BINGOS;
 BEGIN {
-  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.04';
+  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.06';
 }
 
 # ABSTRACT: BeLike::BINGOS when you build your dists
@@ -42,7 +42,7 @@ Dist::Zilla::PluginBundle::BINGOS - BeLike::BINGOS when you build your dists
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -78,7 +78,7 @@ following dist.ini:
 
 =item C<configure>
 
-See L<Dist::Zilla::PluginBundle::Easy>.
+See L<Dist::Zilla::PluginBundle::Role::Easy>.
 
 =back
 
@@ -88,7 +88,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Chris Williams.
+This software is copyright (c) 2011 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

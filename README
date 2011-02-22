@@ -3,7 +3,7 @@ NAME
     dists
 
 VERSION
-    version 0.04
+    version 0.06
 
 SYNOPSIS
        # in dist.ini
@@ -33,13 +33,13 @@ DESCRIPTION
 
   METHODS
     "configure"
-        See Dist::Zilla::PluginBundle::Easy.
+        See Dist::Zilla::PluginBundle::Role::Easy.
 
 AUTHOR
     Chris Williams <chris@bingosnet.co.uk>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Chris Williams.
+    This software is copyright (c) 2011 by Chris Williams.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
