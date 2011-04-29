@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BINGOS;
 BEGIN {
-  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.06';
+  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.08';
 }
 
 # ABSTRACT: BeLike::BINGOS when you build your dists
@@ -20,8 +20,9 @@ sub configure {
     'ReadmeFromPod',
     'PodWeaver',
     'CompileTests',
-    [ 'ChangelogFromGit' => 
-        { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) } 
+    'Clean',
+    [ 'ChangelogFromGit' =>
+        { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) }
     ],
   );
 
@@ -42,7 +43,7 @@ Dist::Zilla::PluginBundle::BINGOS - BeLike::BINGOS when you build your dists
 
 =head1 VERSION
 
-version 0.06
+version 0.08
 
 =head1 SYNOPSIS
 
@@ -71,6 +72,8 @@ following dist.ini:
 
   [ReadmeFromPod]
   [CompileTests]
+
+  [Clean]
 
 =head2 METHODS
 

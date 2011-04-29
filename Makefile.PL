@@ -4,7 +4,7 @@ use warnings;
 
 BEGIN { require 5.008005; }
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -13,7 +13,7 @@ my %WriteMakefileArgs = (
   'AUTHOR' => 'Chris Williams <chris@bingosnet.co.uk>',
   'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Dist-Zilla-PluginBundle-BINGOS',
   'EXE_FILES' => [],
@@ -22,12 +22,13 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Dist::Zilla' => '4.101582',
     'Dist::Zilla::Plugin::ChangelogFromGit' => '0.002',
+    'Dist::Zilla::Plugin::Clean' => '0.02',
     'Dist::Zilla::Plugin::GithubMeta' => '0.08',
     'Dist::Zilla::Plugin::PodWeaver' => '3.101640',
     'Dist::Zilla::Plugin::ReadmeFromPod' => '0.12',
     'Moose' => '1.08'
   },
-  'VERSION' => '0.06',
+  'VERSION' => '0.08',
   'test' => {
     'TESTS' => 't/*.t'
   }
