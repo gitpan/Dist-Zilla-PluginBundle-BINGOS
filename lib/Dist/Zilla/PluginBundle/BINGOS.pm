@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BINGOS;
 BEGIN {
-  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.08';
+  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.10';
 }
 
 # ABSTRACT: BeLike::BINGOS when you build your dists
@@ -43,7 +43,7 @@ Dist::Zilla::PluginBundle::BINGOS - BeLike::BINGOS when you build your dists
 
 =head1 VERSION
 
-version 0.08
+version 0.10
 
 =head1 SYNOPSIS
 

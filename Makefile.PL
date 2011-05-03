@@ -20,15 +20,19 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Dist::Zilla::PluginBundle::BINGOS',
   'PREREQ_PM' => {
-    'Dist::Zilla' => '4.101582',
-    'Dist::Zilla::Plugin::ChangelogFromGit' => '0.002',
+    'Dist::Zilla' => '4.200006',
     'Dist::Zilla::Plugin::Clean' => '0.02',
-    'Dist::Zilla::Plugin::GithubMeta' => '0.08',
-    'Dist::Zilla::Plugin::PodWeaver' => '3.101640',
-    'Dist::Zilla::Plugin::ReadmeFromPod' => '0.12',
+    'Dist::Zilla::Plugin::CompileTests' => '1.110930',
+    'Dist::Zilla::Plugin::GithubMeta' => '0.10',
+    'Dist::Zilla::Plugin::MetaJSON' => '4.200006',
+    'Dist::Zilla::Plugin::PkgVersion' => '4.200006',
+    'Dist::Zilla::Plugin::PodCoverageTests' => '4.200006',
+    'Dist::Zilla::Plugin::PodSyntaxTests' => '4.200006',
+    'Dist::Zilla::Plugin::PodWeaver' => '3.101641',
+    'Dist::Zilla::Plugin::ReadmeFromPod' => '0.14',
     'Moose' => '1.08'
   },
-  'VERSION' => '0.08',
+  'VERSION' => '0.10',
   'test' => {
     'TESTS' => 't/*.t'
   }
