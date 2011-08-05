@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930001",
    "license" : [
       "perl_5"
    ],
@@ -22,6 +22,7 @@
       "runtime" : {
          "requires" : {
             "Dist::Zilla" : "4.200006",
+            "Dist::Zilla::Plugin::ChangelogFromGit" : 0,
             "Dist::Zilla::Plugin::Clean" : "0.02",
             "Dist::Zilla::Plugin::CompileTests" : "1.110930",
             "Dist::Zilla::Plugin::GithubMeta" : "0.10",
@@ -38,13 +39,13 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/bingos/dist-zilla-pluginbundle-bingos/tree",
+      "homepage" : "https://github.com/bingos/dist-zilla-pluginbundle-bingos",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bingos/dist-zilla-pluginbundle-bingos.git",
-         "web" : "http://github.com/bingos/dist-zilla-pluginbundle-bingos/tree"
+         "url" : "https://github.com/bingos/dist-zilla-pluginbundle-bingos",
+         "web" : "https://github.com/bingos/dist-zilla-pluginbundle-bingos"
       }
    },
-   "version" : "0.10"
+   "version" : "0.12"
 }
 

@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.008005; }
+use 5.008005;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -21,6 +21,7 @@ my %WriteMakefileArgs = (
   'NAME' => 'Dist::Zilla::PluginBundle::BINGOS',
   'PREREQ_PM' => {
     'Dist::Zilla' => '4.200006',
+    'Dist::Zilla::Plugin::ChangelogFromGit' => '0',
     'Dist::Zilla::Plugin::Clean' => '0.02',
     'Dist::Zilla::Plugin::CompileTests' => '1.110930',
     'Dist::Zilla::Plugin::GithubMeta' => '0.10',
@@ -32,7 +33,7 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::ReadmeFromPod' => '0.14',
     'Moose' => '1.08'
   },
-  'VERSION' => '0.10',
+  'VERSION' => '0.12',
   'test' => {
     'TESTS' => 't/*.t'
   }
