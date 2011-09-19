@@ -3,7 +3,7 @@ NAME
     dists
 
 VERSION
-    version 0.12
+    version 0.14
 
 SYNOPSIS
        # in dist.ini
@@ -29,7 +29,7 @@ DESCRIPTION
       max_age = 1825
 
       [ReadmeFromPod]
-      [CompileTests]
+      [Test::Compile]
 
       [Clean]
 

@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930001'
+generated_by: 'Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.112600'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,7 +16,6 @@ requires:
   Dist::Zilla: 4.200006
   Dist::Zilla::Plugin::ChangelogFromGit: 0
   Dist::Zilla::Plugin::Clean: 0.02
-  Dist::Zilla::Plugin::CompileTests: 1.110930
   Dist::Zilla::Plugin::GithubMeta: 0.10
   Dist::Zilla::Plugin::MetaJSON: 4.200006
   Dist::Zilla::Plugin::PkgVersion: 4.200006
@@ -24,9 +23,10 @@ requires:
   Dist::Zilla::Plugin::PodSyntaxTests: 4.200006
   Dist::Zilla::Plugin::PodWeaver: 3.101641
   Dist::Zilla::Plugin::ReadmeFromPod: 0.14
+  Dist::Zilla::Plugin::Test::Compile: 1.112400
   Moose: 1.08
   perl: 5.008005
 resources:
   homepage: https://github.com/bingos/dist-zilla-pluginbundle-bingos
-  repository: https://github.com/bingos/dist-zilla-pluginbundle-bingos
-version: 0.12
+  repository: https://github.com/bingos/dist-zilla-pluginbundle-bingos.git
+version: 0.14

@@ -1,4 +1,14 @@
 ==============================
+2011-09-19 14:58:17 +0100 0.14
+==============================
+
+  commit fd41f1fe5d1c4e39219cee7855a2e5eb970d5af7
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Sep 19 14:58:17 2011 +0100
+  
+    Switch CompileTests to Test::Compile 
+
+==============================
 2011-08-05 18:20:45 +0100 0.12
 ==============================
 
