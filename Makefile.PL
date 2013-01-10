@@ -21,7 +21,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Dist::Zilla::PluginBundle::BINGOS",
   "PREREQ_PM" => {
     "Dist::Zilla" => "4.200006",
-    "Dist::Zilla::Plugin::ChangelogFromGit" => 0,
+    "Dist::Zilla::Plugin::ChangelogFromGit" => "0.006",
     "Dist::Zilla::Plugin::Clean" => "0.02",
     "Dist::Zilla::Plugin::GithubMeta" => "0.10",
     "Dist::Zilla::Plugin::MetaJSON" => "4.200006",
@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Test::Compile" => "1.112400",
     "Moose" => "1.08"
   },
-  "VERSION" => "0.14",
+  "VERSION" => "0.16",
   "test" => {
     "TESTS" => "t/*.t"
   }

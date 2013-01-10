@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BINGOS;
 {
-  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.14';
+  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.16';
 }
 
 # ABSTRACT: BeLike::BINGOS when you build your dists
@@ -22,7 +22,7 @@ sub configure {
     'Test::Compile',
     'Clean',
     [ 'ChangelogFromGit' =>
-        { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) }
+        { file_name => 'Changes', tag_regexp => '^(\\d+\\.\\d+)$', max_age => ( 5 * 365 ) }
     ],
   );
 
@@ -33,8 +33,8 @@ no Moose;
 
 qq[BELIKE::BINGOS];
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -43,7 +43,7 @@ Dist::Zilla::PluginBundle::BINGOS - BeLike::BINGOS when you build your dists
 
 =head1 VERSION
 
-version 0.14
+version 0.16
 
 =head1 SYNOPSIS
 
@@ -67,7 +67,7 @@ following dist.ini:
 
   [ChangelogFromGit]
   file_name = Changes
-  tag_regexp = ^\d
+  tag_regexp = ^(\\d+\\.\\d+)$
   max_age = 1825
 
   [ReadmeFromPod]
@@ -91,10 +91,9 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Chris Williams.
+This software is copyright (c) 2013 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
