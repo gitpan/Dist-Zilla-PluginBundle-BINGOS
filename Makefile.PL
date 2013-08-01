@@ -31,14 +31,33 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::PodWeaver" => "3.101641",
     "Dist::Zilla::Plugin::ReadmeFromPod" => "0.14",
     "Dist::Zilla::Plugin::Test::Compile" => "1.112400",
+    "Dist::Zilla::Role::PluginBundle::PluginRemover" => "0.102",
     "Moose" => "1.08"
   },
-  "VERSION" => "0.16",
+  "TEST_REQUIRES" => {
+    "Capture::Tiny" => 0,
+    "Test::More" => "0.88",
+    "blib" => 0
+  },
+  "VERSION" => "0.18",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

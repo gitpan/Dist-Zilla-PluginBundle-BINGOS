@@ -2,11 +2,14 @@
 abstract: 'BeLike::BINGOS when you build your dists'
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
-build_requires: {}
+build_requires:
+  Capture::Tiny: 0
+  Test::More: 0.88
+  blib: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,9 +27,10 @@ requires:
   Dist::Zilla::Plugin::PodWeaver: 3.101641
   Dist::Zilla::Plugin::ReadmeFromPod: 0.14
   Dist::Zilla::Plugin::Test::Compile: 1.112400
+  Dist::Zilla::Role::PluginBundle::PluginRemover: 0.102
   Moose: 1.08
   perl: 5.008005
 resources:
   homepage: https://github.com/bingos/dist-zilla-pluginbundle-bingos
   repository: https://github.com/bingos/dist-zilla-pluginbundle-bingos.git
-version: 0.16
+version: 0.18

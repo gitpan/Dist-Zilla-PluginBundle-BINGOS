@@ -1,12 +1,13 @@
 package Dist::Zilla::PluginBundle::BINGOS;
 {
-  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.16';
+  $Dist::Zilla::PluginBundle::BINGOS::VERSION = '0.18';
 }
 
 # ABSTRACT: BeLike::BINGOS when you build your dists
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
+with 'Dist::Zilla::Role::PluginBundle::PluginRemover';
 
 sub configure {
   my $self = shift;
@@ -43,7 +44,7 @@ Dist::Zilla::PluginBundle::BINGOS - BeLike::BINGOS when you build your dists
 
 =head1 VERSION
 
-version 0.16
+version 0.18
 
 =head1 SYNOPSIS
 
@@ -74,6 +75,11 @@ following dist.ini:
   [Test::Compile]
 
   [Clean]
+
+This PluginBundle also supports PluginRemover, so dropping a plugin is as easy as this:
+
+   [@BINGOS]
+   -remove = PluginIDontWant
 
 =head2 METHODS
 

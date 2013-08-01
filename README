@@ -3,7 +3,7 @@ NAME
     dists
 
 VERSION
-    version 0.16
+    version 0.18
 
 SYNOPSIS
        # in dist.ini
@@ -32,6 +32,12 @@ DESCRIPTION
       [Test::Compile]
 
       [Clean]
+
+    This PluginBundle also supports PluginRemover, so dropping a plugin is
+    as easy as this:
+
+       [@BINGOS]
+       -remove = PluginIDontWant
 
   METHODS
     "configure"
